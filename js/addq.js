@@ -1,4 +1,3 @@
-
 document.querySelector("#addquestion").addEventListener("click",addQ )
 var container=document.querySelector("#addQcontainer")
 
