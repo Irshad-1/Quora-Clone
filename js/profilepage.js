@@ -40,7 +40,7 @@ function qbtn(){
     var heading = document.createElement("h4");
     heading.textContent = "Questions";
     var div = document.createElement("div");
-    div.setAttribute("id","posted");
+    div.setAttribute("id","answer");
     var ques = document.createElement("h3");
     ques.textContent = "How do i get a Windows 7 ultimate product key" + "?";
     var check = document.createElement("h6");
