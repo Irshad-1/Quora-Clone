@@ -1,0 +1,100 @@
+#profile_pic{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+}
+#pic_name{
+    display: flex;
+    flex-direction: row;
+
+}
+#pic_div{
+    padding: 1rem;
+    margin: 1rem;
+}
+#name_div{
+    padding: 1rem;
+}
+#follow{
+    text-decoration: none;
+    color: gray;
+}
+#credentials{
+    text-decoration: none;
+    color: gray;
+}
+#name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+}
+#follow:hover{
+    text-decoration: underline;
+    transition-delay: 0.1s;
+}
+#credentials:hover{
+    text-decoration: underline;
+    transition-delay: 0.1s;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    text-decoration: underline;
+    transition-delay: 0.1s;    
+}
+#btns_div>button{
+    border: none;
+    padding: 0.7rem;
+    background-color: white;
+}
+#btns_div>button:hover{
+    background-color: gainsboro
+}
+#ans_btn{
+    padding: 0.4rem;
+    border-radius: 20%;
+    border: none;
+    background-color: white;
+}
+#ans_btn:hover{
+    background-color: gainsboro;
+}
+#check{
+margin: 5px;
+padding: 0;
+}
+#answer{
+    border-bottom: 0.5px solid gainsboro;
+    border-top: 0.5px solid gainsboro;
+}
+#vote_btn{
+    border: none; 
+    border-top-left-radius: 50%; 
+    border-bottom-left-radius: 50%; 
+    background-color: white;
+}
+#vote_btn1{
+    border: none; 
+    border-top-right-radius: 50%; 
+    border-bottom-right-radius: 50%; 
+    background-color: white;
+}
+#vote_btn:hover{
+    background-color: gainsboro;
+}
+#vote_btn1:hover{
+    background-color: gainsboro;
+}
+#vote{
+    margin-top: 2%;
+}
+#vote_btn2{
+    border: none; 
+    border-radius: 100%;
+    background-color: white;
+}
+#vote_btn2:hover{
+    background-color: gainsboro;
+}
