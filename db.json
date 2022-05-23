@@ -1,0 +1,64 @@
+{
+    "sideNav":[
+        {
+            "img":"https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/15/000000/external-plus-user-interface-tanah-basah-detailed-outline-tanah-basah-2.png",
+            "name":"Create Space"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-2062-100-cuGKoaTVa5xcTTICGaLWKWmk8i9Bqhrp.jpeg",
+            "name":"Writing"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-2603-100-wygbnrggnmctichxiwjmkgqpgtgqyzju.jpeg",
+            "name":"Online Social Networks"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-1575-100-A6ModxJzIbs4YcwW010Fkp6FNJOUxcbC.jpeg",
+            "name":"Economics"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-2083-100-ZIligJqj9z5X1wq9ICcvI9QNj9OBLdwS.jpeg",
+            "name":"Chemistry"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-951-100-N3P1sk6vsq72as9qqwA30zUMvxgBPWJ1.jpeg",
+            "name":"Mathematics"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-931-100-c8WCPwZ9qPsh5zLGQ5wHh1ddxtc9Cch7.jpeg",
+            "name":"Science"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-795-100-fujtazxcynewvtxarymxenpcldxwczqq.jpeg",
+            "name":"Sports"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-877-100-e7jKHEQr0HExAIA9rlsyHlV6HJyRruEo.jpeg",
+            "name":"Cooking"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-897-100-hrukwkbxcneoyfjhaeregbarmrmwxmdx.jpeg",
+            "name":"Design"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-1277-100-vsdniciqwclgdrkvigrfaedrbhicnlgw.jpeg",
+            "name":"Photography"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-1913-100-B8JrwaVauFzsaTSqXDqoWLCXzQb2mTE9.jpeg",
+            "name":"Psychology"
+        },
+        {
+            "img":"https://qphs.fs.quoracdn.net/main-thumb-t-2177-100-JiR07D1TQSfeQzRvWXomVaY4Poj2f8Yb.jpeg",
+            "name":"Technology"
+        },
+        {
+            "img":"https://img.icons8.com/material-outlined/24/000000/compass.png",
+            "name":"Discover Spaces"
+        }
+    ],
+    "links":[
+        "About","Careers","Terms","Privacy","Acceptable Use","Businesses","Press","Your Ad","Choices"
+    ]
+
+}
