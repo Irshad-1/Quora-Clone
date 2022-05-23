@@ -98,3 +98,40 @@ padding: 0;
 #vote_btn2:hover{
     background-color: gainsboro;
 }
+#pen_btn{
+    border: none;
+    background-color: white;
+    border-radius: 100%;
+}
+#pen_btn:hover{
+    background-color: gainsboro;
+}
+#cred{
+    border-bottom: 1px solid gainsboro;
+}
+#clink{
+    color: rgb(68, 68, 235);
+    text-decoration: none;
+}
+#clink:hover{
+    text-decoration: underline;
+}
+#cdata{
+    text-decoration: none;
+}
+#letterbox{
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+#topics{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+    background-color:white;
+    border: none;
+    color: rgb(57, 163, 199);
+}
+#topics:hover{
+    background-color: rgb(189, 189, 223);
+}
