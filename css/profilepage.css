@@ -28,6 +28,12 @@
     font-weight: 600;
     
 }
+.img_q{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+}
 #follow:hover{
     text-decoration: underline;
     transition-delay: 0.1s;
@@ -134,4 +140,64 @@ padding: 0;
 }
 #topics:hover{
     background-color: rgb(189, 189, 223);
+}
+.name_edit{
+    color: white;
+}
+.name_edit:hover{
+    color: gray;
+}
+.modal{
+    margin-left: 28rem;
+    margin-top: 6rem;
+    position: absolute;
+    background-color: #fff;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.modal:target{
+    visibility: visible;
+    opacity: 1;   
+
+}
+.modalcontent{
+    padding: 1rem;
+    position: relative;
+    background-color: gainsboro;
+    width: 600px;
+    height: 400px;
+    border-radius: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cross{
+    font-size: 30px;
+}
+.modaldone{
+    background-color: rgb(56, 56, 159);
+    padding: 0.8rem;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 16px;
+    border: none;
+    text-decoration: none;
+    margin-left: 34rem;
+}
+.name_input{
+    padding: 0.5rem;
+    width: 34rem;
+    margin-bottom: 8rem;
+    border: none;
+    border-radius: 6px;
+}
+.name_input:hover{
+    border: 0.5px solid blue;
+    transition: all 0.4s;
+}
+.temp{
+    color: gainsboro;
+}
+.share_logo{
+    margin-top: 1rem;
 }

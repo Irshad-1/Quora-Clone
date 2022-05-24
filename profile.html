@@ -8,32 +8,50 @@
     <link rel="stylesheet" href="/css/profilepage.css">
 </head>
 <body>
-    <div style="display: flex; flex-direction: row;">
+    <div id="modalbox" class="modal">
+        <div class="modalcontent">
+            <a href="#" class="cross">&times;</a>
+            <h2>Edit Name</h2>
+            You can change your name up to 10 times
+            <h5>Name</h5>
+            <input type="text" placeholder="Write your name here....." class="name_input" id="name_input">
+            <br><br><br>
+            <button style="border: none; background-color:gainsboro" onclick="nChange()">    
+                <a href="#" class="modaldone">DONE</a>
+            </button>
+        </div>
+    </div>    
+    <div style="display: flex; flex-direction: row; margin-left: 15rem;">
         <div style="width: 45%;">
             <div id="pic_name">
                 <div id="pic_div">
                     <img id = "profile_pic" src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" alt="Profile">
                 </div>
                 <div id="name_div">
-                    <h2 id="name">YASH VERMA</h2>
+                    <div style="display:flex; flex-direction:row; width: 20rem;">
+                        <h2 id="name">YASH VERMA</h2>
+                        <a href="#modalbox" style="margin-top: 1.7rem; margin-left:2px;" class="name_edit">Edit</a>
+                    </div>
                     <a href="#" id="credentials">add profile credentials</a>
                     <br>
                     <a href="#" id="follow">0 followers . 0 following</a>
                 </div>
-                <div style="margin-top: 1rem; margin-left: 15rem; border-radius: 100%; height: 1.5rem; border: 1px solid black;"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 12-9.778-8v5.333c-1.926.45-3.5 1.172-4.722 2.167-1.222.995-2.389 2.495-3.5 4.5 1.333-.659 2.833-1.157 4.5-1.496 1.667-.34 2.908-.285 3.722.163V20L21 12Z" class="icon_svg-stroke" stroke="#666" fill="none" stroke-width="1.5" stroke-linejoin="round"></path></svg></div>
+                <div class="share_logo">
+                <div style="  border-radius: 100%; height: 1.5rem; border: 1px solid black;"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m21 12-9.778-8v5.333c-1.926.45-3.5 1.172-4.722 2.167-1.222.995-2.389 2.495-3.5 4.5 1.333-.659 2.833-1.157 4.5-1.496 1.667-.34 2.908-.285 3.722.163V20L21 12Z" class="icon_svg-stroke" stroke="#666" fill="none" stroke-width="1.5" stroke-linejoin="round"></path></svg></div>
+                </div>
             </div>
             <div style="padding-left: 1rem; margin-left: 1rem;">
                 <a href="#">Write a description about yourself</a>
             </div>
             <div id="btns_div" style="display:flex; flex-direction: row; padding-left: 1rem; margin-left: 1rem; border-bottom: 0.5px solid rgb(173, 169, 169);">
-                <button onclick="pbtn()" style="margin-left: 0.5rem;">Profile</button>
-                <button onclick="abtn()" style="margin-left: 0.5rem;">Answer</button>
-                <button onclick="qbtn()" style="margin-left: 0.5rem;">Question</button>
-                <button onclick="pobtn()" style="margin-left: 0.5rem;">Post</button>
-                <button onclick="fsbtn()" style="margin-left: 0.5rem;">Followers</button>
-                <button onclick="fgbtn()" style="margin-left: 0.5rem;">Following</button>
-                <button onclick="ebtn()" style="margin-left: 0.5rem;">Edits</button>
-                <button onclick="acbtn()" style="margin-left: 0.5rem;">Activity</button>
+                <button onclick="pbtn()">Profile</button>
+                <button onclick="abtn()" >Answer</button>
+                <button onclick="qbtn()" >Question</button>
+                <button onclick="pobtn()" >Post</button>
+                <button onclick="fsbtn()">Followers</button>
+                <button onclick="fgbtn()">Following</button>
+                <button onclick="ebtn()">Edits</button>
+                <button onclick="acbtn()">Activity</button>
             </div>
             <div id="container" style="padding-left: 1rem; margin-left: 1rem; font-family: Arial, Helvetica, sans-serif; font-weight: 100; line-height: 10px;">
                 <h4>Profile</h4>
@@ -45,6 +63,7 @@
                     </div>
                 </div>
                 <div id="answer">
+                    <img src="https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png" class="img_q" alt="">
                     <h3>Do GPS trackers need Wi-Fi?</h3>
                     <div>No</div>
                     <div id="vote">
@@ -58,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <div style="width: 25%; font-family: Arial, Helvetica, sans-serif; margin-left: 2rem ;">
+        <div style="width: 30%; font-family: Arial, Helvetica, sans-serif; margin-left: 7rem ; margin-top: 1rem;">
             <div style="display: flex; flex-direction:row;" id="cred">
                 <h4>Credentials & Highlights</h4>
                 <div style="margin-left: 8rem; margin-top: 1rem;">
@@ -107,7 +126,8 @@
                 </center>
             </div>
         </div>
-    </div>    
+    </div>
+
 </body>
 <script src="/js/profilepage.js"></script>
 </html>
