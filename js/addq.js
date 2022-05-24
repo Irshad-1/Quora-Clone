@@ -1,3 +1,4 @@
+
 document.querySelector("#addquestion").addEventListener("click",addQ )
 var container=document.querySelector("#addQcontainer")
 
@@ -10,9 +11,9 @@ function addQ(){
    
     let div1=document.createElement("div");
     div1.style.display="flex";
-    div1.style.justifyContent="space-around";
+    div1.style.justifyContent="space-between";
     div1.style.fontSize="20px"
-    div1.style.padding="30px";
+    div1.style.padding="10px";
     let divX=document.createElement("div");
     divX.textContent="X";
     divX.style.cursor="pointer";
@@ -47,6 +48,44 @@ function addQ(){
     li3.style.color="blue";
     ul.append(li1,li2,li3);
     writtenContent.append(h2,ul);
+
+    let icondiv=document.createElement("div");
+    icondiv.style.display="flex";
+    icondiv.style.justifyContent="flex-start";
+    icondiv.style.marginLeft="15px";
+    
+    let usricon=document.createElement("div");
+    usricon.style.cursor="pointer";
+
+    let imgicon=document.createElement("img");
+   
+    imgicon.src="https://qsf.cf2.quoracdn.net/-4-images.new_grid.profile_default.png-26-688c79556f251aa0.png"
+    imgicon.style.borderRadius="50%";
+    imgicon.style.height="30px";
+    imgicon.style.width="30px";
+    imgicon.style.padding="1px";
+
+
+    usricon.append(imgicon);
+    usricon.onclick=function(){
+        window.location.reload(); //kuch or hoga
+    }
+     let arrowicon=document.createElement("div");
+     arrowicon.style.cursor="pointer"
+     let arrowimgicon=document.createElement("i");
+     arrowimgicon.className="fa-solid fa-caret-right"
+     arrowimgicon.style.fontSize="30px"
+     arrowimgicon.style.padding="0px";
+     arrowicon.append(arrowimgicon);
+     let selectIcon=document.createElement("select");
+     selectIcon.style.cursor="pointer";
+     selectIcon.marginLeft="7px";
+     let option1=document.createElement("option");
+     option1.textContent ="public";
+     let option2=document.createElement("option");
+     option2.textContent ="Limited";
+     selectIcon.append(option1,option2);
+    icondiv.append(usricon,arrowicon,selectIcon);
      
     let textArea=document.createElement("textarea");
         textArea.style.width="100%";
@@ -93,6 +132,54 @@ function addQ(){
 
         div1.append(divX,div2,div3);
 
+        let icondiv=document.createElement("div");
+    icondiv.style.display="flex";
+    icondiv.style.justifyContent="flex-start";
+    icondiv.style.marginLeft="15px";
+
+    let usricon=document.createElement("div");
+    usricon.style.cursor="pointer";
+    let imgicon=document.createElement("img");
+   
+    imgicon.src="https://qsf.cf2.quoracdn.net/-4-images.new_grid.profile_default.png-26-688c79556f251aa0.png"
+    imgicon.style.borderRadius="50%";
+    imgicon.style.height="30px";
+    imgicon.style.width="30px";
+    imgicon.style.padding="1px";
+    usricon.append(imgicon);
+    usricon.onclick=function(){
+        window.location.reload();//kuch or hoga
+    }
+
+     let arrowicon=document.createElement("div");
+     arrowicon.style.cursor="pointer";
+     let arrowimgicon=document.createElement("i");
+     arrowimgicon.className="fa-solid fa-caret-right"
+     arrowimgicon.style.fontSize="30px"
+     arrowimgicon.style.padding="0px";
+     arrowicon.append(arrowimgicon);
+     let selectIcon=document.createElement("select");
+     selectIcon.style.cursor="pointer";
+     selectIcon.marginLeft="7px";
+     let option1=document.createElement("option");
+     option1.textContent ="Everyone";
+     let option2=document.createElement("option");
+     option2.textContent ="Some space";
+     selectIcon.append(option1,option2);
+    icondiv.append(usricon,arrowicon,selectIcon);
+
+
+        var hrlinefull=document.createElement("hr");
+    
+        hrlinefull.style.color="blue"
+        hrlinefull.style.height="7px";
+        hrlinefull.style.border="1px solid blue"
+        hrlinefull.style.backgroundColor="blue";
+        hrlinefull.style.marginLeft="60%";
+        hrlinefull.style.marginRight="3%";
+        
+        var hrline=document.createElement("hr");
+
         let textArea=document.createElement("textarea");
         textArea.style.width="100%";
         textArea.style.minHeight="350PX";
@@ -100,23 +187,38 @@ function addQ(){
         textArea.style.fontSize="15px";
         textArea.placeholder="say something...."
 
+
+        let lastpost=document.createElement("div");
+        lastpost.style.display="flex";
+        lastpost.style.flexDirection="row-reverse";
+        lastpost.style.justifyContent="flex-start";
+        lastpost.style.marginRight="10px";
+
         let post=document.createElement("div");
         post.textContent=`post`;
         post.style.borderRadius=`20%`;
         post.style.backgroundColor=`blue`;
         post.style.color="white";
-        post.style.display=`flex`;
-        post.style.justifyContent=`flex-start`;
-        post.style.flexDirection="row-reverse";
         post.style.width="50px";
         post.style.height="40px";
+        post.style.padding="15px";
+        post.style.paddingBottom="25px";
         post.style.cursor="pointer";
-
+        post.style.fontSize="19px"
+        lastpost.append(post);
         
-        div.append(div1,textArea,post);
+        div.append(div1,hrlinefull,hrline,icondiv,textArea,lastpost);
         container.append(div);
     }
-    let hrline=document.createElement("hr");
+    var hrlinefull=document.createElement("hr");
+    
+    hrlinefull.style.color="blue"
+    hrlinefull.style.height="7px";
+    hrlinefull.style.border="1px solid blue"
+    hrlinefull.style.backgroundColor="blue";
+    hrlinefull.style.marginLeft="20%";
+    hrlinefull.style.marginRight="40%";
+    var hrline=document.createElement("hr");
     div1.append(divX,div2,div3);
 
 
@@ -149,7 +251,7 @@ function addQ(){
 
 
 
-    div.append(div1,hrline,writtenContent,textArea,last);
+    div.append(div1,hrlinefull,hrline,writtenContent, icondiv,textArea,last);
      
   
 
