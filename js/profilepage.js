@@ -1,4 +1,9 @@
 var cont = document.getElementById("container");
+function nChange(){
+    var n = document.getElementById("name_input").value;
+    var name = document.getElementById("name");
+    name.textContent = n.toUpperCase();
+}
 function pbtn(){
     cont.textContent = "";
     var heading = document.createElement("h4");
@@ -17,8 +22,14 @@ function pbtn(){
     btn.setAttribute("id","ans_btn");
     d1.append(btn)
     div.append(ques,check,d1);
-    var div1 = document.createElement("div2");
+    var div1 = document.createElement("div");
     div1.setAttribute("id","answer");
+    var div2 = document.createElement("div");
+    div2.setAttribute("id","pName");
+    var img = document.createElement("img");
+    img.setAttribute("src","https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
+    img.setAttribute("class","img_q");
+    div2.append(img);
     var q = document.createElement("h3");
     q.textContent = "Do GPS trackers need Wi-Fi" + "?";
     var a = document.createElement("div");
@@ -26,7 +37,7 @@ function pbtn(){
     var d2 = document.createElement("div");
     d2.setAttribute("id","vote")
     d2.innerHTML = '<div><button id="vote_btn"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4 3 15h6v5h6v-5h6z" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" stroke-linejoin="round"></path></svg></button><button id="vote_btn1"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 20 9-11h-6V4H9v5H3z" class="icon_svg-stroke icon_svg-fill" stroke="#666" fill="none" stroke-width="1.5" stroke-linejoin="round"></path></svg></button><button id = "vote_btn2"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g class="icon_svg-stroke" stroke="#666" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M19.748 10a8.003 8.003 0 0 0-15.496.002m.001 4.003a8.003 8.003 0 0 0 15.494 0"></path><path d="m2.5 7.697 1.197 3.289 3.289-1.197m14.5 6.5L20.289 13 17 14.197"></path></g></svg></button><button id="vote_btn2"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.071 18.86c4.103 0 7.429-3.102 7.429-6.93C19.5 8.103 16.174 5 12.071 5s-7.429 3.103-7.429 6.93c0 1.291.379 2.5 1.037 3.534.32.501-1.551 3.058-1.112 3.467.46.429 3.236-1.295 3.803-.99 1.09.585 2.354.92 3.701.92Z" class="icon_svg-stroke icon_svg-fill" stroke="#666" stroke-width="1.5" fill="none"></path></svg></button></div>'
-    div1.append(q,a,d2)
+    div1.append(div2,q,a,d2)
     cont.append(heading,div,div1);
 }
 function abtn(){
@@ -39,10 +50,16 @@ function abtn(){
     q.textContent = "Do GPS trackers need Wi-Fi" + "?";
     var a = document.createElement("div");
     a.textContent = "No";
+    var div2 = document.createElement("div");
+    div2.setAttribute("id","pName");
+    var img = document.createElement("img");
+    img.setAttribute("src","https://www.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png");
+    img.setAttribute("class","img_q");
+    div2.append(img);
     var d2 = document.createElement("div");
     d2.setAttribute("id","vote")
     d2.innerHTML = '<div><button id="vote_btn"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4 3 15h6v5h6v-5h6z" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" stroke-linejoin="round"></path></svg></button><button id="vote_btn1"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m12 20 9-11h-6V4H9v5H3z" class="icon_svg-stroke icon_svg-fill" stroke="#666" fill="none" stroke-width="1.5" stroke-linejoin="round"></path></svg></button><button id = "vote_btn2"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g class="icon_svg-stroke" stroke="#666" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="round"><path d="M19.748 10a8.003 8.003 0 0 0-15.496.002m.001 4.003a8.003 8.003 0 0 0 15.494 0"></path><path d="m2.5 7.697 1.197 3.289 3.289-1.197m14.5 6.5L20.289 13 17 14.197"></path></g></svg></button><button id="vote_btn2"><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.071 18.86c4.103 0 7.429-3.102 7.429-6.93C19.5 8.103 16.174 5 12.071 5s-7.429 3.103-7.429 6.93c0 1.291.379 2.5 1.037 3.534.32.501-1.551 3.058-1.112 3.467.46.429 3.236-1.295 3.803-.99 1.09.585 2.354.92 3.701.92Z" class="icon_svg-stroke icon_svg-fill" stroke="#666" stroke-width="1.5" fill="none"></path></svg></button></div>'
-    div1.append(q,a,d2)
+    div1.append(div2,q,a,d2)
     cont.append(heading,div1);
 }
 function qbtn(){
