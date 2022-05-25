@@ -20,8 +20,8 @@
   }
   #navbarWrapper{
       width:100%;
-      
   }
+  
   #sideNav>div:last-child{
       display: flex;
       flex-wrap: wrap;
@@ -38,15 +38,48 @@
       cursor: pointer;
       
   }
+  #postsDisplay>div{
+      margin: 20px auto;
+      background-color: white;
+  }
+  #postsDisplay>div>div{
+      display: flex;
+      justify-content: flex-start;
+      padding: 10px;
+      align-items: center;
+  }
+  #postsDisplay>div>div>div{
+      font-size: small;
+  }
+  #postsDisplay>div>div>div>div:first-child{
+      font-weight: bold;
+  }
+  #postsDisplay>div>div>div>div:nth-child(2){
+      color: #636466;
+  }
+  #postsDisplay>div>div>img{
+      border-radius: 50%;
+      margin-right: 10px;
+  }
+  #postsDisplay >div>img{
+      width: 100%;
+  }
+  #postsDisplay>div>h3 ,#postsDisplay>div>p{
+      margin: 15px;
+  }
   #sideNav>div:last-child a:hover{
     border-bottom: 1px solid #bdbdbd;
   }
   #navbar{
-      max-width: 1100px;
-      margin: auto;
+    max-width: 1050px;
+    margin: auto;  
+     
+      width: 100%;
       display: flex;
       margin-top: 10px;
       justify-content: space-between;
+      overflow: hidden;
+      top: 0;
     
   }
   #navbar >div{
@@ -116,13 +149,53 @@
     color: white;
   }
   #mainBody{
-      max-width: 1100px;
-      margin: auto;
+      max-width: 1050px;
+      margin: auto ;
       display: flex;
+     
   }
   #contentSection{
       width:65%;
   }
+  #rightDiv{
+      width:20%;
+      margin-left: 20px;
+      
+  }
+#improveFeed{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.smallfont{
+    font-size:x-small
+}
+#spacesToFollow{
+    background-color: white;
+    margin-top: 20px;
+    border: 0.25px solid #bdbdbd;
+}
+#spacesToFollow h4{
+    padding: 15px;
+}
+.bigfont{
+    font-size: small;
+}
+
+#spacesToFollow>div{
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid #bdbdbd;
+    padding: 15px;
+}
+#rightDiv input{
+   margin-right: 15px;
+}
+#improveFeed > *{
+    border: 1px solid #bdbdbd;
+    padding: 15px;
+    color:#434445
+}
   #inputAsk{
       display: flex;
       flex-direction: column;
@@ -159,11 +232,13 @@
   #inputAsk >div:nth-child(2) >div{
       align-items: center;
   }
+  #wrapperSideNav{
+    width:15%;
+  }
   #sideNav{
       display: flex;
       flex-direction: column;
-   
-      width:15%;
+    
   }
   #sideNav >div{
       display: flex;
@@ -173,10 +248,20 @@
   }
   #sideNav>div:hover:not(#sideNav>div:last-child){
       background-color: #bdbdbd;
+      cursor:pointer;
+  }
+  .hoverEffect:hover{
+    background-color: #bdbdbd;
+    cursor:pointer;
   }
   #sideNav img{
       width: 20px;
 
+  }
+  #spacesToFollow img{
+    width: 25px;
+    height:25px;
+    border-radius: 10px;
   }
   #sideNav p{
       font-size: 0.8em;
@@ -188,7 +273,7 @@
       padding-top: 20px;
   }
   .bg-lightgrey{
-      background-color:#f7f7f8;
+      background-color:#dcdcdc;
   }
   .bg-grey{
       background-color: rgb(225, 214, 214);
@@ -199,3 +284,12 @@
     border-radius: 50%;
   }
   
+.darkcolor{
+    color:#434445;
+}
+.lightcolor{
+    color:#aaaeb5;
+}
+#spacesToFollow >div>div:last-child{
+margin-left: 10px;
+}
