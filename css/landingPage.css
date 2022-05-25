@@ -20,14 +20,25 @@
   }
   #navbarWrapper{
       width:100%;
+      background-color: white;
+      position: fixed;
+      top:0;
   }
-  
+  #postsDisplay h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  #postsDisplay>div>div:first-child:hover{
+      cursor: pointer;
+      text-decoration: underline;
+  }
   #sideNav>div:last-child{
       display: flex;
       flex-wrap: wrap;
       align-items: center;
       font-size: x-small;
       color:#bdbdbd;
+     
   }
   #sideNav>div:last-child p{
       font-size:larger;
@@ -271,6 +282,8 @@
   #WrapperContainer{
       background-color: rgb(240, 240, 240);
       padding-top: 20px;
+      
+      margin-top: 50px;
   }
   .bg-lightgrey{
       background-color:#dcdcdc;
