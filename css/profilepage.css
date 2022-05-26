@@ -175,14 +175,19 @@ padding: 0;
     font-size: 30px;
 }
 .modaldone{
-    background-color: rgb(56, 56, 159);
+    background-color:rgb(39, 97, 212);
     padding: 0.8rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
     font-size: 12px;
     color: #fff;
-    border-radius: 16px;
+    border-radius: 20px;
     border: none;
     text-decoration: none;
-    margin-left: 34rem;
+    margin-left: 33rem;
+}
+.modaldone:hover{
+    text-decoration: none;
 }
 .name_input{
     padding: 0.5rem;

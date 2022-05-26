@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "asked":[
+    {
+      "question":"Do GPS trackers need Wi-Fi",
+      "answer": "No"
+    },
+    {
+      "question":"Can We format phone whithout unlocking it",
+      "answer": "Yes you can."  
+    }
+  ],
+  "answered":[
+    {
+      "question":"How do i get a Windows 7 ultimate product key",
+      "answer": ""
+    },
+    {
+      "question":"How to retrieve password on instagram",
+      "answer": ""
+    }
+  ],
+  
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
