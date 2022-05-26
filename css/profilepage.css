@@ -1,0 +1,208 @@
+#profile_pic{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+}
+#pic_name{
+    display: flex;
+    flex-direction: row;
+
+}
+#pic_div{
+    padding: 1rem;
+    margin: 1rem;
+}
+#name_div{
+    padding: 1rem;
+}
+#follow{
+    text-decoration: none;
+    color: gray;
+}
+#credentials{
+    text-decoration: none;
+    color: gray;
+}
+#name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    
+}
+.img_q{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    border-radius: 50%;
+}
+#follow:hover{
+    text-decoration: underline;
+    transition-delay: 0.1s;
+}
+#credentials:hover{
+    text-decoration: underline;
+    transition-delay: 0.1s;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+a:hover{
+    text-decoration: underline;
+    transition-delay: 0.1s;    
+}
+#btns_div>button{
+    border: none;
+    padding: 0.7rem;
+    background-color: white;
+}
+#btns_div>button:hover{
+    background-color: gainsboro
+}
+#ans_btn{
+    padding: 0.4rem;
+    border-radius: 20%;
+    border: none;
+    background-color: white;
+}
+#ans_btn:hover{
+    background-color: gainsboro;
+}
+#check{
+margin: 5px;
+padding: 0;
+}
+#answer{
+    border-bottom: 0.5px solid gainsboro;
+    border-top: 0.5px solid gainsboro;
+}
+#vote_btn{
+    border: none; 
+    border-top-left-radius: 50%; 
+    border-bottom-left-radius: 50%; 
+    background-color: white;
+}
+#vote_btn1{
+    border: none; 
+    border-top-right-radius: 50%; 
+    border-bottom-right-radius: 50%; 
+    background-color: white;
+}
+#vote_btn:hover{
+    background-color: gainsboro;
+}
+#vote_btn1:hover{
+    background-color: gainsboro;
+}
+#vote{
+    margin-top: 2%;
+}
+#vote_btn2{
+    border: none; 
+    border-radius: 100%;
+    background-color: white;
+}
+#vote_btn2:hover{
+    background-color: gainsboro;
+}
+#pen_btn{
+    border: none;
+    background-color: white;
+    border-radius: 100%;
+}
+#pen_btn:hover{
+    background-color: gainsboro;
+}
+#cred{
+    border-bottom: 1px solid gainsboro;
+}
+#clink{
+    color: rgb(68, 68, 235);
+    text-decoration: none;
+}
+#clink:hover{
+    text-decoration: underline;
+}
+#cdata{
+    text-decoration: none;
+}
+#letterbox{
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+#topics{
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 12px;
+    background-color:white;
+    border: none;
+    color: rgb(57, 163, 199);
+}
+#topics:hover{
+    background-color: rgb(189, 189, 223);
+}
+.name_edit{
+    color: white;
+}
+.name_edit:hover{
+    color: gray;
+}
+.modal{
+    margin-left: 28rem;
+    margin-top: 6rem;
+    position: absolute;
+    background-color: #fff;
+    transition: all 0.4s;
+    visibility: hidden;
+    opacity: 0;
+
+}
+.modal:target{
+    visibility: visible;
+    opacity: 1;   
+
+}
+.modalcontent{
+    padding: 1rem;
+    position: relative;
+    background-color: gainsboro;
+    width: 600px;
+    height: 400px;
+    border-radius: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cross{
+    font-size: 30px;
+}
+.modaldone{
+    background-color:rgb(39, 97, 212);
+    padding: 0.8rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    margin-left: 33rem;
+}
+.modaldone:hover{
+    text-decoration: none;
+}
+.name_input{
+    padding: 0.5rem;
+    width: 34rem;
+    margin-bottom: 8rem;
+    border: none;
+    border-radius: 6px;
+}
+.name_input:hover{
+    border: 0.5px solid blue;
+    transition: all 0.4s;
+}
+.temp{
+    color: gainsboro;
+}
+.share_logo{
+    margin-top: 1rem;
+}
