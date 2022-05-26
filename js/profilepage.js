@@ -5,14 +5,14 @@ async function fetchData(){
     data1 = await res.json();
     console.log(data1);
     var ans = document.getElementById("abtn");
-    ans.textContent = data1.length +"Answer";
+    ans.textContent = data1.length +" Answer";
 }
 async function fetchData2(){
     let res = await fetch("http://localhost:3000/asked");
     data2 = await res.json();
     console.log(data2);
     var que = document.getElementById("qbtn");
-    que.textContent = data2.length +"Question";
+    que.textContent = data2.length +" Question";
 }
 fetchData();
 fetchData2();
@@ -144,9 +144,3 @@ function updateLike(){
         like_btn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4 3 15h6v5h6v-5h6z" class="icon_svg-stroke icon_svg-fill" stroke-width="1.5" stroke="#666" fill="none" stroke-linejoin="round"></path></svg>'+"1";
     }
 }
-function qaCnt(){
-    var ans = document.getElementById("abtn");
-    var que = document.getElementById("qbtn");
-    console.log(data1.length)
-}
-qaCnt();
