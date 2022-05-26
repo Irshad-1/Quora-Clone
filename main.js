@@ -1,5 +1,6 @@
+const {Auth} = require('two-step-auth');
 
-async function signUp(){
+window.signUp=async function(){
     let res= await fetch("http://localhost:3000/users");
     let data=await res.json();
     console.log(data);
