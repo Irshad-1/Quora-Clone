@@ -73,6 +73,10 @@ a {
     background-position: 10px;
 
 }
+footer{
+    justify-content: space-evenly;
+}
+
 .abcd {
     margin-bottom: 10px;
     display: flex;
@@ -174,4 +178,9 @@ footer a {
 }
 .sign{
     font-size: 15px;
+}
+@media all and(min-width:480px) and (max-width:890px){
+    .container{
+        width: 90%;
+    }
 }
