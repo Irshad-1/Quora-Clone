@@ -2,11 +2,11 @@
     padding: 0.5rem;
     padding-top: 0rem;
     text-align: center;
-    width: 9rem;
+    width: 10rem;
     background-color: white;
 }
 #card img{
-    width: 10rem;
+    width: 11rem;
     height: 3rem;
     border-top-left-radius: 10px;
     border-top-right-radius:10px ;
@@ -14,15 +14,48 @@
 }
 #card{
     background-color: white;
-    width: 10rem;
+    width: 11rem;
     border-top-left-radius: 10px;
     border-top-right-radius:10px ;
     height: 15rem;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius:10px ;
 }
-.card_cont{
+#card_cont{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     grid-gap: 10px; 
+}
+.card_tit:hover{
+    text-decoration: underline;
+}
+.view_btn{
+    background-color: gainsboro;
+    width: 50rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: none;
+}
+.view_btn:hover{
+    background-color: rgb(202, 199, 199);
+}
+#invites{
+    background-color: white;
+    padding: 5px;
+    border: 1px solid gainsboro;
+    font-weight: 400;
+    color: gray;
+}
+#mail{
+    background-color: white;
+    text-align: center;
+}
+#right{
+    width: 17rem;
+}
+#top-div{
+    width: 50rem;
+}
+#top-img{
+    width: 50rem;
 }
