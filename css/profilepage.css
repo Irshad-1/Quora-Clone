@@ -197,7 +197,7 @@ padding: 0;
     border-radius: 6px;
 }
 .name_input:hover{
-    border: 0.5px solid rgb(39, 97, 212);;
+    border: 0.5px solid rgb(39, 97, 212,0.5);
     transition: all 0.4s;
 }
 .temp{
