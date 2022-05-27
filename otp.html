@@ -14,12 +14,31 @@
         </div>
         <div id="form">
             <h2>Confirm your email</h2>
-            <p>Please enter the code we sent to dhsahiu@gmail.com</p>
-            <input type="text" ><br>
+            <p id="emailDisplay">Please enter the code we sent to dhsahiu@gmail.com</p>
+            <input type="number" ><br>
             <a href="">Didn't recieve an email or something went wrong? Resend code</a>
         </div>
-        <button>Next</button>
+        <button onclick="otpValidation()">Next</button>
     </div>
 </body>
-<script src=""></script>
+<script>
+    (async function(){
+        let res= await fetch("http://localhost:3000/tempData");
+        let data=await res.json();
+        document.querySelector('#emailDisplay').innerText="Please enter the code we sent to "+data[0].providedEmail;
+    })();
+async function otpValidation(){
+    let res= await fetch("http://localhost:3000/tempData");
+        let data=await res.json();
+    let providedOtp=document.querySelector('#form>input').value;
+    if(providedOtp==data[0].otp)
+    {
+        alert("Correct Otp");
+        window.location.href="./password.html";
+    }
+    else{
+        alert("Incorrect Otp.Enter Valid Otp");
+    }
+}
+</script>
 </html>

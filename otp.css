@@ -46,6 +46,9 @@ button{
     width: 80px;
     color: white;
 }
+button:hover{
+    cursor: pointer;
+}
 #form a:hover{
     text-decoration: underline;
 }

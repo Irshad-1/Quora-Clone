@@ -193,6 +193,7 @@ window.signUp=async function(){
     console.log(data);
     let flag=true;
     let providedEmail=document.querySelector("#form input[type='email']").value;
+    let name=document.querySelector("#form input[type='text']").value;
     data.forEach((element)=>{
         if(element.email == providedEmail){
             flag=false;
@@ -203,11 +204,23 @@ window.signUp=async function(){
     if(flag){
         try {
             const res = await Auth(providedEmail, "Masai Quora");
-            console.log("Hello");
-            console.log(res);
-            console.log(res.mail);
-            console.log(res.OTP);
-            console.log(res.success);
+            let otp=res.OTP;
+
+            let body={
+                name,
+                providedEmail,
+                otp
+            };
+            let post= await fetch('http://localhost:3000/tempdata',{
+                method:"POST",
+                body:JSON.stringify(body),
+                headers:{
+                    "Content-Type":"application/json"
+                }
+            });
+            let data = await post.json();
+            console.log(data);
+            window.location.href="otp.html";
         } catch (error) {
             console.log(error)
         }
