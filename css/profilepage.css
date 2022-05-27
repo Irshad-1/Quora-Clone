@@ -133,13 +133,13 @@ padding: 0;
     padding: 10px;
     padding-left: 15px;
     padding-right: 15px;
-    border-radius: 12px;
+    border-radius: 16px;
     background-color:white;
     border: none;
-    color: rgb(57, 163, 199);
+    color:rgb(39, 97, 212);;
 }
 #topics:hover{
-    background-color: rgb(189, 189, 223);
+    background-color: rgb(39, 97, 212,0.1);;
 }
 .name_edit{
     color: white;
@@ -197,7 +197,7 @@ padding: 0;
     border-radius: 6px;
 }
 .name_input:hover{
-    border: 0.5px solid blue;
+    border: 0.5px solid rgb(39, 97, 212,0.5);
     transition: all 0.4s;
 }
 .temp{
