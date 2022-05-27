@@ -7,12 +7,34 @@ async function login(){
     let flag=true;
     data.forEach((element)=>{
         if(element.email==providedEmail && element.password==pass){
-            flag=false;
-            alert("Login Successful");
+            (async function(){
+                let nam=element.name;
+            let mail = element.email;
+            let pas =  element.password;
+            let body={
+                nam,
+                mail,
+                pas
+            };
+            let post=await fetch('http://localhost:3000/loggedInUser',{
+                method:"POST",
+                body:JSON.stringify(body),
+                headers:{
+                    "Content-Type":"application/json"
+                }
+            });
+            let dat=await post.json();
             window.location.href="./landingPage.html";
+            alert("Login Successful");
+            
+            })();
+
+            flag=false;
+            
         }
     });
     if(flag){
         alert("Incorrect Login Details");
     }
+    
 }

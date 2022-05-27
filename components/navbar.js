@@ -16,7 +16,7 @@ function navbar(){
             <input type="text" placeholder="Search Quora">
         </div>
         <div class="bg-lightgrey hoverEffect">Try Quo...</div>
-        <a  href=""><img class="round" src="https://qsf.cf2.quoracdn.net/-4-images.new_grid.profile_default.png-26-688c79556f251aa0.png"/></a>
+        <a  href="profile.html"><img class="round" src="https://qsf.cf2.quoracdn.net/-4-images.new_grid.profile_default.png-26-688c79556f251aa0.png"/></a>
         <a  href=""><img src="https://img.icons8.com/ios/30/000000/globe--v1.png"/></a>
         <div><a href="">Add Question</a>
             <i class="arrow down "></i></div>
