@@ -21,6 +21,7 @@ function nChange(){
     var name = document.getElementById("name");
     name.textContent = n.toUpperCase();
 }
+
 function pbtn(){
     cont.textContent = "";
     var heading = document.createElement("h4");
