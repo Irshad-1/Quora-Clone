@@ -15,12 +15,12 @@ async function fetchData2(){
     que.textContent = data2.length +" Question";
 }
 async function fetchData3(){
-    let res = await fetch("http://localhost:3000/users");
+    let res = await fetch("http://localhost:3000/loggedInUser");
     data2 = await res.json();
     console.log(data2.length);
     var n = data2.length;
     var na = document.getElementById("name");
-    na.textContent = data2[n-1].name;  
+    na.textContent = data2[n-1].nam;  
 }
 fetchData();
 fetchData2();
