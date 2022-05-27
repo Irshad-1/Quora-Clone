@@ -13,6 +13,7 @@
     margin: 1rem;
 }
 #name_div{
+    padding: 2rem;
     padding: 1rem;
 }
 #follow{
@@ -142,7 +143,7 @@ padding: 0;
     background-color: rgb(39, 97, 212,0.1);;
 }
 .name_edit{
-    color: white;
+    color: gainsboro;
 }
 .name_edit:hover{
     color: gray;

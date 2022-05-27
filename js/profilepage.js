@@ -14,8 +14,17 @@ async function fetchData2(){
     var que = document.getElementById("qbtn");
     que.textContent = data2.length +" Question";
 }
+async function fetchData3(){
+    let res = await fetch("http://localhost:3000/users");
+    data2 = await res.json();
+    console.log(data2.length);
+    var n = data2.length;
+    var na = document.getElementById("name");
+    na.textContent = data2[n-1].name;  
+}
 fetchData();
 fetchData2();
+fetchData3();
 function nChange(){
     var n = document.getElementById("name_input").value;
     var name = document.getElementById("name");

@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
+    <script src="https://kit.fontawesome.com/cfd0f1d190.js" crossorigin="anonymous"></script>
     <link rel = "icon" href = "https://qph.cf2.quoracdn.net/main-qimg-4d340b8b704ccfc33ac16dd261b6c121-lq" type = "image/x-icon">
     <link rel="stylesheet" href="/css/profilepage.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+
 </head>
 <body>
     <div id="modalbox" class="modal">
@@ -22,7 +25,9 @@
             </button>
         </div>
     </div>
-        
+    <div id="navbarWrapper">
+    </div>    
+    <br><br><br>
     <div style="display: flex; flex-direction: row; margin-left: 15rem;">
         <div style="width: 45%;">
             <div id="pic_name">
@@ -132,4 +137,8 @@
 
 </body>
 <script src="/js/profilepage.js"></script>
+<script type="module">
+        import navbar from "./components/navbar.js";
+    document.querySelector('#navbarWrapper').innerHTML=navbar();
+</script>
 </html>
