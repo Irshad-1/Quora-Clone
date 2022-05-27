@@ -4,41 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spaces</title>
+    <link rel = "icon" href = "https://qph.cf2.quoracdn.net/main-qimg-4d340b8b704ccfc33ac16dd261b6c121-lq" type = "image/x-icon">
     <link rel="stylesheet" href="/css/spacepage.css">
 </head>
 <body style="background-color:gainsboro; font-family: Arial, Helvetica, sans-serif;">
-    <div style="width:40% ;">
-        <h3>Discover Spaces</h3>
-        <h4>Spaces you might like</h4>
-        <div class="card_cont">
-            <div id="card">
-                <img src="https://qphs.fs.quoracdn.net/main-custom-tc-1589897-320x64-qphdntuqdsbvngcybszdbzfneiwvwgvx.jpeg" alt="">
-                <div>
-                    <h5>Psychology Tricks</h5>
-                    <h5 style="font-weight:100;">Psychology Tips & Tricks for Self-Improvement and Understanding People</h5>
+    <div style="display:grid; grid-template-columns: repeat(2,1fr); grid-gap: 30px; margin-left: 13rem; padding-top: 1rem;">    
+        <div style="width:40% ;" id="out_card">
+            <div id="top-div">
+                <div id="top-con">
+                    <h3 style="font-weight: 600;">Welcome to Spaces!</h3>
+                    <h5 style="color: grey; font-weight: 500;">Follow Spaces to explore your interests on Quora.</h5>
+                    <button id="sbtn">Create a Space</button>
+                    <button id="sbtn">Discover Spaces</button>
                 </div>
+                <img src="./Spacepage img/img1.jpg" alt="" id="top-img">
             </div>
-            <div id="card">
-                <img src="https://qphs.fs.quoracdn.net/main-custom-tc-1575805-320x64-vhjjvzlerntjpamlbzwuioubwgcbauxe.jpeg" alt="">
-                <div>
-                    <h5>SEO</h5>
-                    <h5 style="font-weight:100;">All about Search engine optimization.</h5>
-                </div>
+            <h3>Discover Spaces</h3>
+            <h4>Spaces you might like</h4>
+            <div id="card_cont">
+                
             </div>
-            <div id="card">
-                <img src="https://qphs.fs.quoracdn.net/main-custom-tc-1578913-320x64-hfxegwfnebnpaddmessonkfxuiaraowh.jpeg" alt="">
-                <div>
-                    <h5>Sadhguru</h5>
-                    <h5 style="font-weight:100;">Sadhguru offers yoga meditation as life science to enrich physical mental health</h5>
-                </div>
+        </div>
+        <div id="right">
+            <div id="invites">
+                Pending Invites
             </div>
-            <div id="card">
-                <img src="https://qphs.fs.quoracdn.net/main-custom-tc-1586937-320x64-cnikvvcozvckoajmqlboutksbwdryfwv.jpeg" alt="">
-                <div>
-                    <h5>The Intelligent Investor</h5>
-                    <h5 style="font-weight:100;">Everything About Stock Market & Finance.</h5>
-                </div>
+            <div id="mail">
+                <br>
+                <svg style="margin-top: 0.5rem; color:gainsboro; " width="24" height="19" xmlns="http://www.w3.org/2000/svg"><g class="icon_svg-stroke" stroke="#666" stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linejoin="round"><path d="M4.5 6.5h15v12h-15z"></path><path stroke-linecap="round" d="M4.5 7.5 12 14l7.5-6.5"></path></g></svg>
+                <h5 style="font-weight: 100; color: gray; line-height: 0px;">No invites</h5>
+                <br>
             </div>
         </div>
     </div>
