@@ -1,199 +1,4 @@
 {
-<<<<<<< HEAD
-  "sideNav": [
-    {
-      "img": "https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/15/000000/external-plus-user-interface-tanah-basah-detailed-outline-tanah-basah-2.png",
-      "name": "Create Space"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-2062-100-cuGKoaTVa5xcTTICGaLWKWmk8i9Bqhrp.jpeg",
-      "name": "Writing"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-2603-100-wygbnrggnmctichxiwjmkgqpgtgqyzju.jpeg",
-      "name": "Online Social Networks"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-1575-100-A6ModxJzIbs4YcwW010Fkp6FNJOUxcbC.jpeg",
-      "name": "Economics"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-2083-100-ZIligJqj9z5X1wq9ICcvI9QNj9OBLdwS.jpeg",
-      "name": "Chemistry"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-951-100-N3P1sk6vsq72as9qqwA30zUMvxgBPWJ1.jpeg",
-      "name": "Mathematics"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-931-100-c8WCPwZ9qPsh5zLGQ5wHh1ddxtc9Cch7.jpeg",
-      "name": "Science"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-795-100-fujtazxcynewvtxarymxenpcldxwczqq.jpeg",
-      "name": "Sports"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-877-100-e7jKHEQr0HExAIA9rlsyHlV6HJyRruEo.jpeg",
-      "name": "Cooking"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-897-100-hrukwkbxcneoyfjhaeregbarmrmwxmdx.jpeg",
-      "name": "Design"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-1277-100-vsdniciqwclgdrkvigrfaedrbhicnlgw.jpeg",
-      "name": "Photography"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-1913-100-B8JrwaVauFzsaTSqXDqoWLCXzQb2mTE9.jpeg",
-      "name": "Psychology"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-t-2177-100-JiR07D1TQSfeQzRvWXomVaY4Poj2f8Yb.jpeg",
-      "name": "Technology"
-    },
-    {
-      "img": "https://img.icons8.com/material-outlined/24/000000/compass.png",
-      "name": "Discover Spaces"
-    }
-  ],
-  "links": [
-    "About",
-    "Careers",
-    "Terms",
-    "Privacy",
-    "Acceptable Use",
-    "Businesses",
-    "Press",
-    "Your Ad",
-    "Choices"
-  ],
-  "posts": [
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-1356862014-50-pdalbjjmsgnsyhhjoxpnjoakgyjzolat.jpeg",
-      "name": "Hemant Singh",
-      "profileDesc": "Owner & Develeoper at Wishusucess.com (2018 – present)",
-      "date": "May 15",
-      "ques": "What is the darkest part of a software engineer’s career?",
-      "answer": "1.You are nothing more than a money making machine for any company.  \n \n 2. If you sit on the chair for a long time, your back becomes crooked or your mother dies while working or you die, it does not make any sense to the company, company only wants productivity.  \n \n 3. Whether you are a manager, chief technical officer, or any position, you are just a resource. And the health of the resource does not matter much and when it is no longer fit for use, it is replaced.  \n \n 4. When it's time to spend money for your children's education, your career is on the decline stage.  \n \n 5. You must always be ready to change jobs at any day, any time. \n \n Thank you for reading.",
-      "answerImg": "https://qphs.fs.quoracdn.net/main-qimg-9f5565255350101ba2afe440370abe9e-lq",
-      "upvotes": "3.5K",
-      "share": "16",
-      "comments": "95"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-1356862014-50-pdalbjjmsgnsyhhjoxpnjoakgyjzolat.jpeg",
-      "name": "Hemant Singh",
-      "profileDesc": "Owner & Develeoper at Wishusucess.com (2018 – present)",
-      "date": "May 15",
-      "ques": "What is the darkest part of a software engineer’s career?",
-      "answer": "1.You are nothing more than a money making machine for any company.  \n \n 2. If you sit on the chair for a long time, your back becomes crooked or your mother dies while working or you die, it does not make any sense to the company, company only wants productivity.  \n \n 3. Whether you are a manager, chief technical officer, or any position, you are just a resource. And the health of the resource does not matter much and when it is no longer fit for use, it is replaced.  \n \n 4. When it's time to spend money for your children's education, your career is on the decline stage.  \n \n 5. You must always be ready to change jobs at any day, any time. \n \n Thank you for reading.",
-      "answerImg": "https://qphs.fs.quoracdn.net/main-qimg-9f5565255350101ba2afe440370abe9e-lq",
-      "upvotes": "3.5K",
-      "share": "16",
-      "comments": "95"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-1356862014-50-pdalbjjmsgnsyhhjoxpnjoakgyjzolat.jpeg",
-      "name": "Hemant Singh",
-      "profileDesc": "Owner & Develeoper at Wishusucess.com (2018 – present)",
-      "date": "May 15",
-      "ques": "What is the darkest part of a software engineer’s career?",
-      "answer": "1.You are nothing more than a money making machine for any company.  \n \n 2. If you sit on the chair for a long time, your back becomes crooked or your mother dies while working or you die, it does not make any sense to the company, company only wants productivity.  \n \n 3. Whether you are a manager, chief technical officer, or any position, you are just a resource. And the health of the resource does not matter much and when it is no longer fit for use, it is replaced.  \n \n 4. When it's time to spend money for your children's education, your career is on the decline stage.  \n \n 5. You must always be ready to change jobs at any day, any time. \n \n Thank you for reading.",
-      "answerImg": "https://qphs.fs.quoracdn.net/main-qimg-9f5565255350101ba2afe440370abe9e-lq",
-      "upvotes": "3.5K",
-      "share": "16",
-      "comments": "95"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-1356862014-50-pdalbjjmsgnsyhhjoxpnjoakgyjzolat.jpeg",
-      "name": "Hemant Singh",
-      "profileDesc": "Owner & Develeoper at Wishusucess.com (2018 – present)",
-      "date": "May 15",
-      "ques": "What is the darkest part of a software engineer’s career?",
-      "answer": "1.You are nothing more than a money making machine for any company.  \n \n 2. If you sit on the chair for a long time, your back becomes crooked or your mother dies while working or you die, it does not make any sense to the company, company only wants productivity.  \n \n 3. Whether you are a manager, chief technical officer, or any position, you are just a resource. And the health of the resource does not matter much and when it is no longer fit for use, it is replaced.  \n \n 4. When it's time to spend money for your children's education, your career is on the decline stage.  \n \n 5. You must always be ready to change jobs at any day, any time. \n \n Thank you for reading.",
-      "answerImg": "https://qphs.fs.quoracdn.net/main-qimg-9f5565255350101ba2afe440370abe9e-lq",
-      "upvotes": "3.5K",
-      "share": "16",
-      "comments": "95"
-    }
-  ],
-  "spacesToFollow": [
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-2714553-50-adibbohfsdtbradjckefidhafwapcwlo.jpeg",
-      "heading": "Interesting Things I Find On The Internet",
-      "desc": "A Quora Space that lives up to it's name."
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-1731-50-vmnmgdboxkqznicijmxehqhwunwrlevs.jpeg",
-      "heading": "Fix your English",
-      "desc": "A space for English learners, fix your grammar, vocabulary and spoken English"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-1575805-50-uvrobwdwkyudfvbeozkfeezxfdopsduy.jpeg",
-      "heading": "SEO",
-      "desc": "All about Search engine optimisation."
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-1729827-50-niyfdxnvoponydfikzvufelzwuedaxlf.jpeg",
-      "heading": "IT Confessions",
-      "desc": "Open Confession is Good For Soul"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-1580730-50-qemnxywnwxvxnuhsltvwtxbrmlcejsvi.jpeg",
-      "heading": "YouTube Monetisation Tips",
-      "desc": "Learn about YouTube monetisation process and how to get views and subscribers"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-1589897-50-qlokxluendldgihlyihypayljrfmcdux.jpeg",
-      "heading": "Psychology Tricks",
-      "desc": "Psychology Tips & Tricks for Self-Improvement and Understanding People"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-1579489-50-xdrtsvtmvlgijzvnaltdktvaffrkgwqs.jpeg",
-      "heading": "Theory of Life",
-      "desc": "Understanding philosophy and beauty of Life."
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-1589348-50-wifhduvjswojbqnexjahuokdmlhdtnyz.jpeg",
-      "heading": "Programming",
-      "desc": "It's all about Computer Programming"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-1654804-50-qoogtbhwrphxkrfbqjsmxqhumrmscczm.jpeg",
-      "heading": "C/C ++ (plus) programming",
-      "desc": "Share post Or ask questions related to C or C++ languages"
-    },
-    {
-      "img": "https://qphs.fs.quoracdn.net/main-thumb-ti-347990-50-yhoxfgfgbpzprorwzumdngxcdqrdmkay.jpeg",
-      "heading": "Travel Guide",
-      "desc": "Discover travel Destination With Magical Holiday Rich Culture Nature &  Wildlife"
-    }
-  ],
-  "users": [
-    {
-      "name": "Md Irshad",
-      "email": "abc@gmail.com",
-      "password": "1234",
-      "id": 1
-    },
-    {
-      "name": "Udayveer",
-      "email": "uday@gmail.com",
-      "password": "4321",
-      "id": 2
-    },
-    {
-      "name": "Md Irshad",
-      "email": "md14015@gmail.com",
-      "password": "ser@1234",
-      "id": 3
-    }
-  ],
-  "tempdata": []
-}
-=======
     "sideNav":[
         {
             "img":"https://img.icons8.com/external-tanah-basah-detailed-outline-tanah-basah/15/000000/external-plus-user-interface-tanah-basah-detailed-outline-tanah-basah-2.png",
@@ -419,16 +224,26 @@
           "cont":"ONLY MENTIONS ABOUT THE BOOKS THAT INFLUENCED YOU "
         }
       ],
-    "users":[
+      "users": [
         {
-            "name":"Md Irshad",
-            "email":"abc@gmail.com"
+          "name": "Md Irshad",
+          "email": "abc@gmail.com",
+          "password": "1234",
+          "id": 1
         },
         {
-            "name":"Udayveer",
-            "email":"uday@gmail.com"
+          "name": "Udayveer",
+          "email": "uday@gmail.com",
+          "password": "4321",
+          "id": 2
+        },
+        {
+          "name": "Md Irshad",
+          "email": "md14015@gmail.com",
+          "password": "ser@1234",
+          "id": 3
         }
-    ]
+      ],
+      "tempdata": []
 
 }
->>>>>>> 2acf8ea6fe0a6107d90e240cba885af9429167bc
