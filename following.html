@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora</title>
+    <script src="https://kit.fontawesome.com/cfd0f1d190.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/following.css">
+    <link rel="stylesheet" href="./css/addq.css" />
+</head>
+<body>
+       <div id="navbarWrapper">
+       </div>
+       <div id="addQcontainer"> </div>
+       <div id="createSpace"></div>
+       <div id="WrapperContainer">
+           <div id="mainBody">
+                <div id="wrapperSideNav">
+                    <div id="sideNav">
+                    
+                    </div>
+                </div>
+                <div id="contentSection">
+                    <div id="inputAsk">
+                        <div >
+                            <img class="round" src="https://qsf.cf2.quoracdn.net/-4-images.new_grid.profile_default.png-26-688c79556f251aa0.png"/>
+                            <input type="text" placeholder="What do you want to ask or share?">
+                        </div>
+                        <div>
+                            <div  style="cursor:pointer">
+                                <img src="https://img.icons8.com/metro/26/000000/questions.png"/>
+                                <p >Ask</p>
+                            </div>
+                            <div>
+                                <img src="https://img.icons8.com/external-outline-juicy-fish/26/000000/external-write-contact-us-outline-outline-juicy-fish-3.png"/>
+                                <p>Answer</p>
+                            </div>
+                            <div id="addquestion" style="cursor:pointer">
+                                <img src="https://img.icons8.com/external-simple-line-edt.graphics/26/000000/external-Pen-stationery-simple-line-edt.graphics-2.png"/>
+                                <p >Post</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="postsDisplay"></div>
+
+                   
+
+                </div>
+                
+           </div>
+       </div>
+       <script src="./js/following.js"></script>
+       <script type="text/javascript" src="./js/addq.js"></script>
+</body>
+
+</html>
+
+<script type="module" >
+    import navbar from "./components/navbar.js";
+    document.querySelector('#navbarWrapper').innerHTML=navbar();
+    let homeIcon=document.querySelector('#colorchange');
+        homeIcon.style.color="#AD0F0F";
+        // let aHome=document.querySelector('#pagelinks>div>#acolorchange');
+        // aHome.style.borderBottom="3px solid #AD0F0F";
+
+    // let followingIcon=document.querySelector("#colorchange").style.color="#AD0F0F";
+
+    // let homeIcon=document.querySelector('#pagelinks i:first-child');
+    
+    // homeIcon.style.color="#AD0F0F";
+    // let aHome=document.querySelector('#pagelinks div:first-child');
+    // aHome.style.borderBottom="3px solid #AD0F0F";
+        
+    
+    
+   
+    
+
+
+ 
+ 
+
+   
+ 
+</script>
