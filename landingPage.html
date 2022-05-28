@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quora</title>
+    <link rel = "icon" href = "https://qph.cf2.quoracdn.net/main-qimg-4d340b8b704ccfc33ac16dd261b6c121-lq" type = "image/x-icon">
+
+    <script src="https://kit.fontawesome.com/cfd0f1d190.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/landingPage.css">
+</head>
+<body>
+       <div id="navbarWrapper">
+       </div>
+       <div id="WrapperContainer">
+           <div id="mainBody">
+                <div id="wrapperSideNav">
+                    <div id="sideNav">
+                    
+                    </div>
+                </div>
+                <div id="contentSection">
+                    <div id="inputAsk">
+                        <div>
+                            <img class="round" src="https://qsf.cf2.quoracdn.net/-4-images.new_grid.profile_default.png-26-688c79556f251aa0.png"/>
+                            <input type="text" placeholder="What do you want to ask or share?">
+                        </div>
+                        <div>
+                            <div>
+                                <img src="https://img.icons8.com/metro/26/000000/questions.png"/>
+                                <p>Ask</p>
+                            </div>
+                            <div>
+                                <img src="https://img.icons8.com/external-outline-juicy-fish/26/000000/external-write-contact-us-outline-outline-juicy-fish-3.png"/>
+                                <p>Answer</p>
+                            </div>
+                            <div>
+                                <img src="https://img.icons8.com/external-simple-line-edt.graphics/26/000000/external-Pen-stationery-simple-line-edt.graphics-2.png"/>
+                                <p>Post</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="postsDisplay"></div>
+                </div>
+                <div id="rightDiv">
+                    <div id="improveFeed">
+                        <h4 class="bigfont">Improve Your Feed</h4>
+                        <label for="" class="smallfont"> <input type="checkbox" value="">Follow 5 more spaces</label>
+                        <label for="" class="smallfont"> <input type="checkbox" value="">Upvote 2 more good pieces of content</label>
+                        <label for="" class="smallfont"> <input type="checkbox" value="">Ask a question</label>
+                        <label for="" class="smallfont"> <input type="checkbox" value="">Add 3 credentials about where you live, work or study</label>
+                        
+                    </div>
+                    <div id="spacesToFollow">
+                        <h4 class="bigfont">Spaces to follow</h4>
+                    </div>
+                </div>
+           </div>
+       </div>
+</body>
+
+</html>
+<script type="module" >
+    import navbar from "./components/navbar.js";
+    document.querySelector('#navbarWrapper').innerHTML=navbar();
+    let homeIcon=document.querySelector('#pagelinks i:first-child');
+    homeIcon.style.color="#AD0F0F";
+    let aHome=document.querySelector('#pagelinks div:first-child');
+    aHome.style.borderBottom="3px solid #AD0F0F";
+    
+
+    (async function(){
+        let res= await fetch("http://localhost:3000/sideNav");
+        let data=await res.json();
+        displaySideNav(data);
+    })();
+    
+
+    async function displaySideNav(data){
+        let sideNav=document.getElementById('sideNav');
+        data.forEach((element)=>{
+            let img=document.createElement('img');
+            let title=document.createElement('p');
+            let box=document.createElement('div');
+
+            img.src=element.img;
+            title.innerText=element.name;
+            box.append(img,title);
+            sideNav.append(box);
+        })
+    }
+
+    (async function(){
+        let res= await fetch("http://localhost:3000/links");
+        let data=await res.json();
+        console.log(data);
+        let sideNav=document.getElementById('sideNav');
+        let box=document.createElement('div');
+        data.forEach((element,index)=>{
+            if(index != 0){
+                let dot=document.createElement('p');
+                dot.innerText=".";
+                let link=document.createElement('a');
+                link.innerText=element;
+                
+                box.append(dot,link);
+            }else{
+                let link=document.createElement('a');
+                link.innerText=element;
+                box.append(link);
+            }
+            
+            
+        });
+        sideNav.append(box);
+    })();
+
+    (async function(){
+        let res= await fetch("http://localhost:3000/posts");
+        let data=await res.json();
+        data.forEach((element)=>{
+            let card = document.createElement('div');
+            let headingDiv = document.createElement('div');
+            let headingInnerDiv =  document.createElement('div');
+            let headingInnerDiv1 =  document.createElement('div');
+            let headingInnerDiv2 =  document.createElement('div');
+            let headingImg=  document.createElement('img');
+            let h3= document.createElement('h3');
+            let para = document.createElement('p');
+            let img=  document.createElement('img');
+            // let footerDiv= document.createElement('div');
+            // let footerInnerDiv =  document.createElement('div');
+            headingImg.src= element.img;
+            headingInnerDiv1.innerText=element.name;
+            headingInnerDiv2.innerText=element.profileDesc+"."+element.date;
+            h3.innerText=element.ques;
+            para.innerText=element.answer;
+            img.src=element.answerImg;
+            headingInnerDiv.append(headingInnerDiv1,headingInnerDiv2);
+            headingDiv.append(headingImg,headingInnerDiv);
+            card.append(headingDiv,h3,para,img);
+            document.querySelector('#postsDisplay').append(card);
+        });
+    })();
+    (async function(){
+        let res= await fetch("http://localhost:3000/spacesToFollow");
+        let data=await res.json();
+        console.log(data);
+        data.forEach((element)=>{
+            let box=document.createElement('div');
+            let innerbox1=document.createElement('div');
+            let innerbox2=document.createElement('div');
+            let img=document.createElement('img');
+            img.src=element.img;
+            let para1=document.createElement('p');
+            
+            let para2=document.createElement('p');
+            para1.innerText=element.heading;
+            para2.innerText=element.desc;
+            innerbox2.append(para1,para2);
+            innerbox1.append(img);
+            box.append(innerbox1,innerbox2);
+            para1.classList.add('smallfont');
+            para2.classList.add('smallfont');
+            para1.classList.add('darkcolor');
+            para2.classList.add('lightcolor')
+            document.querySelector('#spacesToFollow').append(box);
+        })
+    })();   
+</script>

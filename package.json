@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Irshad-1/Quora-Clone/issues"
   },
-  "homepage": "https://github.com/Irshad-1/Quora-Clone#readme"
+  "homepage": "https://github.com/Irshad-1/Quora-Clone#readme",
+  "dependencies": {
+    "two-step-auth": "^1.1.2"
+  },
+  "type": "commonjs"
 }

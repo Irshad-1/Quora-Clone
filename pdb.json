@@ -1,0 +1,81 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "asked":[
+    {
+      "question":"Do GPS trackers need Wi-Fi",
+      "answer": "No"
+    },
+    {
+      "question":"Can We format phone whithout unlocking it",
+      "answer": "Yes you can."  
+    }
+  ],
+  "answered":[
+    {
+      "question":"How do i get a Windows 7 ultimate product key",
+      "answer": ""
+    },
+    {
+      "question":"How to retrieve password on instagram",
+      "answer": ""
+    }
+  ],
+  "spaces":[
+    {
+      "url":"https://qphs.fs.quoracdn.net/main-custom-tc-1589897-320x64-qphdntuqdsbvngcybszdbzfneiwvwgvx.jpeg",
+      "tit":"Psychology Tricks",
+      "cont":"Psychology Tips & Tricks for Self-Improvement and Understanding People"
+    },
+    {
+      "url":"https://qphs.fs.quoracdn.net/main-custom-tc-1575805-320x64-vhjjvzlerntjpamlbzwuioubwgcbauxe.jpeg",
+      "tit":"SEO",
+      "cont":"All about Search engine optimization"
+    },
+    {
+      "url":"https://qphs.fs.quoracdn.net/main-custom-tc-1578913-320x64-hfxegwfnebnpaddmessonkfxuiaraowh.jpeg",
+      "tit":"Sadhguru",
+      "cont":"Sadhguru offers yoga meditation as life science to enrich physical mental health"
+    },
+    {
+      "url":"https://qphs.fs.quoracdn.net/main-custom-tc-1586937-320x64-cnikvvcozvckoajmqlboutksbwdryfwv.jpeg",
+      "tit":"The Intelligent Investor",
+      "cont":"Everything About Stock Market & Finance."
+    },
+    {
+      "url":"https://qphs.fs.quoracdn.net/main-custom-tc-876-320x64-qkvpobzixvuviitcdsjlqiuwbwgjothg.jpeg",
+      "tit":"World History",
+      "cont":"My answers on World History here"
+    },
+    {
+      "url":"https://qphs.fs.quoracdn.net/main-custom-tc-1656941-320x64-rnngtfroowjqccwklvelcyxniqwybpgg.jpeg",
+      "tit":"Hackers & Hacking Zone",
+      "cont":"Get daily updates and info for the better understanding of Hacking tips & Tricks"
+    },
+    {
+      "url":"https://qphs.fs.quoracdn.net/main-custom-tc-1577165-320x64-zicwhiezmtwmqdffnycgfoakyajypkta.jpeg",
+      "tit":"Skin Care & Hair Care",
+      "cont":"Space to share best remedies for skin care and hair care"
+    },
+    {
+      "url":"https://qphs.fs.quoracdn.net/main-custom-tc-1586670-320x64-yakgmjqqvwyhvizdudzejxykynxvhwwq.jpeg",
+      "tit":"Books that influenced You",
+      "cont":"ONLY MENTIONS ABOUT THE BOOKS THAT INFLUENCED YOU "
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
