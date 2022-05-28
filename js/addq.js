@@ -181,31 +181,118 @@ function addQ(){
         var hrline=document.createElement("hr");
 
         let textArea=document.createElement("textarea");
+        textArea.setAttribute("id","textArea");
         textArea.style.width="100%";
+
         textArea.style.minHeight="350PX";
         textArea.style.padding="10px";
-        textArea.style.fontSize="15px";
+        // let textSize=someFun()
+        // if(textSize===1){
+        //     textArea.style.fontSize="bold";
+        //     console.log("1");
+        // }
+        // else if(textSize===2){
+        //     textArea.style.fontSize="21px";
+        //     console.log("2");
+        // }
+        
+        // textArea.style.fontSize="75px";
         textArea.placeholder="say something...."
 
 
         let lastpost=document.createElement("div");
         lastpost.style.display="flex";
-        lastpost.style.flexDirection="row-reverse";
-        lastpost.style.justifyContent="flex-start";
-        lastpost.style.marginRight="10px";
+        lastpost.style.flexDirection="row";
+        lastpost.style.justifyContent="space-between";
+        lastpost.style.margin="10px"
+        lastpost.style.backgroundColor="red"
+        // lastpost.style.justifyContent="flex-start";
+        // lastpost.style.marginRight="10px";
 
-        let post=document.createElement("div");
+        let lastFlexContainer=document.createElement("div");
+        lastFlexContainer.style.display="flex";
+        lastFlexContainer.style.justifyContent="flex-start";
+        let divH=document.createElement("div");
+        divH.textContent="H";
+        divH.style.backgroundColor="blue"
+        divH.style.color="white";
+        divH.style.fontSize="35px";
+        divH.style.paddingLeft="4px";
+        divH.style.paddingRight="4px";
+        divH.style.borderRadius="25%";
+        divH.style.cursor="pointer";
+        divH.style.marginLeft="5px"
+        divH.style.marginRight="5px"
+
+        divH.onclick=function(){
+            textArea.style.fontSize="50px";
+            textArea.style.fontWeight="bold";
+            
+            console.log("1");
+            // function  someFun(){;
+            //     return parseInt(1);
+            //    }
+        }
+        let divN=document.createElement("div");
+        divN.textContent="N";
+        divN.style.backgroundColor="black"
+        divN.style.color="white";
+        divN.style.fontSize="35px";
+        divN.style.paddingLeft="4px";
+        divN.style.paddingRight="4px";
+        divN.style.borderRadius="25%";
+        divN.style.cursor="pointer";
+        divN.style.marginLeft="5px"
+        divN.style.marginRight="5px"
+        divN.onclick=function(){
+            textArea.style.fontSize="21px";
+            console.log("2");
+            // function  someFun(){;
+            //     return parseInt(2);
+            //    }
+        }
+        let inputimg=document.createElement("input");
+        inputimg.type="file";
+        inputimg.style.margin="10px";
+        inputimg.style.padding="8px";
+
+        lastFlexContainer.append(divH,divN,inputimg);
+
+        let post=document.createElement("span");
         post.textContent=`post`;
         post.style.borderRadius=`20%`;
         post.style.backgroundColor=`blue`;
         post.style.color="white";
-        post.style.width="50px";
-        post.style.height="40px";
+        // post.style.width="50px";
+        // post.style.height="40px";
         post.style.padding="15px";
-        post.style.paddingBottom="25px";
+        // post.style.paddingBottom="25px";
         post.style.cursor="pointer";
         post.style.fontSize="19px"
-        lastpost.append(post);
+        
+        post.onclick=function(){
+            let obj={
+                "img": "https://qsf.cf2.quoracdn.net/-4-images.new_grid.profile_default.png-26-688c79556f251aa0.png",
+                "name": "Pappu Kumar",
+                "profileDesc": "Student at Masai School",
+                 "date": "5/27/2022",
+                "ques": document.querySelector("#textArea").value,
+                "answer":".",
+                "answerImg": "https://picsum.photos/180/120?random=218",
+               "upvotes": 0,
+             "share": 0,
+            "comments": 0
+            }
+            let a=JSON.parse(localStorage.getItem("posts"));
+            a.unshift(obj);
+            localStorage.setItem("posts",JSON.stringify(a));
+            console.log(JSON.parse(localStorage.getItem("posts")));
+            displaySideNav(JSON.parse(localStorage.getItem("posts")));
+            window.location.reload();
+           
+        }
+
+        lastpost.append(lastFlexContainer,post);
         
         div.append(div1,hrlinefull,hrline,icondiv,textArea,lastpost);
         container.append(div);
@@ -257,3 +344,6 @@ function addQ(){
 
     container.append(div);
 };
+
+
+

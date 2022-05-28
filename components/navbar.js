@@ -1,4 +1,5 @@
 function navbar(){
+
    return `<div id="navbar">
     <div id="logo">
         <h2>Quora</h2>
@@ -25,3 +26,4 @@ function navbar(){
 </div>`;
 }
 export default navbar;
+
